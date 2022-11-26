@@ -1,0 +1,135 @@
+.section {
+    margin-top: 5em;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.what-we-do .tab-section {
+    margin-top: 4em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tab-section .primary-col {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 25%;
+}
+
+.tab-section .primary-col .tab {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    font-size: .875rem;
+    background: #ececec;
+}
+
+.tab-section .primary-col .tab.active {
+    border-right: none;
+    background-color: #f8f8f8;
+    border-left: 4px solid #02a783;
+    font-weight: 600;
+}
+
+
+.secondary-col {
+    padding: 2em 3em;
+}
+
+.tab-content-text {
+    font-size: 0.875rem;
+    line-height: 1.6em;
+}
+
+.tab-content-title {
+    margin-top: 4rem;
+    margin-bottom: 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.tab-content-main {
+    display: flex;
+    margin-top: 2em;
+}
+
+.tab-content-main .tab-content-img {
+    max-width: 240px;
+    object-fit: cover;
+}
+
+.tab-content-main .tab-content-card {
+    padding: 0 2em;
+}
+
+.tab-content-main .tab-content-card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.6em;
+}
+
+.tab-content-main .tab-content-card-info {
+    font-size: 0.75rem;
+    margin-top: 1em;
+    line-height: 1.6em;
+}
+
+.tab-content-main .tab-content-card-cta {
+    display: block;
+    text-decoration: none;
+    font-size: .75rem;
+    margin-top: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tab-black-bg {
+    /* position: relative; */
+    height: calc(100%);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    /* height: 100px; */
+    width: 100%;
+    background-color: black;
+}
+
+
+@media (max-width: 1024px) {
+    .tab-section .primary-col {
+        width: 100%;
+    } 
+
+    .tab-section .secondary-col {
+        width: 0;
+        display: none;
+    }
+
+    .tab-section .primary-col .tab {
+        padding: 1.5em 2em;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .tab-section .primary-col .tab::after {
+        content: "+";
+        color: #02a783;
+        font-size: 1.5rem;
+        line-height: 1em;
+        position: absolute;
+        right: 2rem;
+    }
+
+    .tab-section .primary-col .tab.active::after {
+        content: "x";
+        color: #02a783;
+        font-size: 1.5rem;
+        line-height: 1em;
+        position: absolute;
+        right: 2rem;
+    }
+
+
+}

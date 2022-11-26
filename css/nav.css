@@ -70,25 +70,7 @@ nav a.active {
     /* background-color: green; */
 }
 
-.cl-white {
-    color: white;
-}
 
-.cl-gray {
-    color: #565662;
-}
-
-.cl-green {
-    color: #02a783;
-}
-
-.cl-offwhite {
-    color: #949494;
-}
-
-.ft-tiny {
-    font-size: 0.875rem;
-}
 
 .nav-icons {
     font-size: 1rem;
@@ -131,25 +113,6 @@ nav a.active {
     overflow: hidden;
 }
 
-
-
-.expand::after {
-    display: inline-block;
-    content: "";
-    background-image: url("./../assets/right.svg");
-    width: 1em;
-    height: 1em;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    transform: translate(4px, 2px);
-}
-
-.expand-light::after {
-    background-image: url("./../assets/right-light.svg");
-    width: 0.75em;
-    opacity: 0.8;
-    transform: translate(6px, 5px);
-}
 
 .grid-3 {
     list-style: none;
@@ -299,10 +262,10 @@ nav a.active {
 }
 
 .menu-primary::before {
-    content: "x";
+    content: "";
     background-color: #27272c;
     min-width: 7.5%;
-    width: calc((100vw - 1200px)*(1/2));
+    width: calc((100vw - 1150px)*(1/2));
     height: 30em;
     position: absolute;
     z-index: 0;
@@ -310,10 +273,6 @@ nav a.active {
 }
 
 @media (max-width: 1024px) {
-    /* body {
-        background-color: blue;
-    } */
-
     nav {
         display: none;
     }
