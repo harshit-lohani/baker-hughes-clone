@@ -38,10 +38,10 @@
                 </ul>
             </nav>
             <div class="nav-icons">
-                <a class="search-icon" id="search-icon" onclick="return toggleSearch()">
+                <a class="nav-icon search-icon" id="search-icon" onclick="return toggleSearch()">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
-                <a class="menu-icon icon-closed" onclick="toggleSideMenu(this)">
+                <a class="nav-icon menu-icon icon-closed" onclick="toggleSideMenu(this)">
                     <i class="fa-solid fa-bars"></i>
                 </a>
             </div>
@@ -58,7 +58,7 @@
             <ul class="grid-3">
                 <li class="menu-item">
                     <a href="#">
-                        <img src="./assets/down.svg" class="item-icon" width="40px" height="40px" alt="">
+                        <img src="./assets/nav-icons/leaf.svg" class="item-icon" width="40px" height="40px" alt="">
                         <span class="info">
                             <span class="item-title">Enery Transition</span>
                             <span class="item-desc">
@@ -207,14 +207,14 @@
                     </div>
                     <div class="flex">
                         <ul class="col-1 bg-black cl-offwhite ft-bold" id="nav2col1">
-                            <li class="nav-menu-li expand">Oilfield</li>
-                            <li class="nav-menu-li expand">Turbomachinery & Process Solutions</li>
-                            <li class="nav-menu-li expand">Software & Analytics</li>
-                            <li class="nav-menu-li expand">Measurement & Controls</li>
+                            <li class="nav-menu-li expand expand-light">Oilfield</li>
+                            <li class="nav-menu-li expand expand-light">Turbomachinery & Process Solutions</li>
+                            <li class="nav-menu-li expand expand-light">Software & Analytics</li>
+                            <li class="nav-menu-li expand expand-light">Measurement & Controls</li>
                             <li>
                                 <hr class="divider cl-offwhite">
                             </li>
-                            <li class="nav-menu-li">Brands</li>
+                            <li class="nav-menu-li expand expand-light">Brands</li>
                         </ul>
                     </div>
                 </div>
@@ -342,9 +342,9 @@
 
         <div class="side-menu menu-closed" id="side-menu">
             <ul class="container side-menu-container" id="side-menu-main">
-                <li class="side-menu-item" onclick="showSideNav1()">Featured Capabilities</li>
-                <li class="side-menu-item" onclick="showSideNav2()">Products & Services</li>
-                <li class="side-menu-item" onclick="showSideNav3()">Company</li>
+                <li class="side-menu-item expand" onclick="showSideNav1()">Featured Capabilities</li>
+                <li class="side-menu-item expand" onclick="showSideNav2()">Products & Services</li>
+                <li class="side-menu-item expand" onclick="showSideNav3()">Company</li>
 
                 <li class="side-menu-footer">
                     <ul class="">
@@ -370,7 +370,7 @@
             </ul>
 
             <ul class="container side-sub-menu menu-closed" id="side-menu-2">
-                <li class="side-menu-title" onclick="showMainNav()">Featured Capabilities</li>
+                <li class="side-menu-title" onclick="showMainNav()">Products and Services</li>
                 <li class="divider side-menu-divider"></li>
                 <li class="side-menu-item">Products & Services</li>
                 <li class="side-menu-item">Energy Transition</li>
@@ -381,7 +381,7 @@
             </ul>
 
             <ul class="container side-sub-menu menu-closed" id="side-menu-3">
-                <li class="side-menu-title" onclick="showMainNav()">Featured Capabilities</li>
+                <li class="side-menu-title" onclick="showMainNav()">Company</li>
                 <li class="divider side-menu-divider"></li>
                 <li class="side-menu-item">Products & Services</li>
                 <li class="side-menu-item">Energy Transition</li>

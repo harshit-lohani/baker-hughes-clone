@@ -83,7 +83,7 @@ function toggleSearch() {
 
 function toggleSideMenu(id) {
 
-    if (id.classList[1] == "icon-closed") {
+    if (id.classList.contains("icon-closed")) {
 
         id.classList.replace("icon-closed", "icon-open")
         id.innerHTML = "<i class='fa-solid fa-x'></i>"
