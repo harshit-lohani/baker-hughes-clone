@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    background-color: #f8f8f8;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85vw;
+}
+
+.bg-black {
+    background: #27272c;
+    z-index: 2;
+}
+
+.bg-green {
+    background-color: #02a783;
+}
+
+
