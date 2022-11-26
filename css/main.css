@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     background-color: #f8f8f8;
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -11,6 +12,11 @@ body {
 
 .flex {
     display: flex;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
 }
 
 .container {

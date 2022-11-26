@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baker Hughes</title>
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/news.css">
     <script src="https://kit.fontawesome.com/b1c24123d2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,9 +49,17 @@
             </div>
         </div>
 
+        <div class="container search-nav menu-closed" id="search-nav">
+            <form>
+                <label for="search-input" class="ft-tiny" id="">Search</label>
+                <div class="input-field col-1">
+                    <input type="text" autocomplete="off" id="search-input" onchange="console.log('hello')">
+                    <img src="./assets/spinner.svg" class="search-nav-icon" alt="loading">
+                </div>
+            </form>
+        </div>
+
         <hr class="nav-seperator divider">
-
-
 
         <div class="container nav-1 menu-closed" id="nav1">
             <div class="close-icon">
@@ -157,10 +166,10 @@
                     <a href="#">
                         <img src="./assets/down.svg" class="item-icon" width="40px" height="40px" alt="">
                         <span class="info">
-                            <span class="item-title">Enery Transition</span>
-                            <span class="item-desc">
+                            <span class="item-title">Carbon Capture, Utilisation and Storage (CCUS)</span>
+                            <div class="item-desc">
                                 Energy technology to help the industry advance on the path to net-zero
-                            </span>
+                            </div>
                         </span>
                     </a>
                 </li>
@@ -275,10 +284,10 @@
                     </div>
                     <div class="flex">
                         <ul class="col-1 bg-black cl-offwhite ft-bold" id="nav3col1">
-                            <li class="nav-menu-li expand">Oilfield</li>
-                            <li class="nav-menu-li expand">Turbomachinery & Process Solutions</li>
-                            <li class="nav-menu-li expand">Software & Analytics</li>
-                            <li class="nav-menu-li expand">Measurement & Controls</li>
+                            <li class="nav-menu-li expand expand-light">Oilfield</li>
+                            <li class="nav-menu-li expand expand-light">Turbomachinery & Process Solutions</li>
+                            <li class="nav-menu-li expand expand-light">Software & Analytics</li>
+                            <li class="nav-menu-li expand expand-light">Measurement & Controls</li>
                             <li>
                                 <hr class="divider cl-offwhite">
                             </li>
@@ -330,16 +339,7 @@
             </div>
         </div>
 
-        <div class="container search-nav menu-closed" id="search-nav">
-            <form>
-                <label for="search-input" class="ft-tiny" id="">Search</label>
-                <div class="input-field col-1">
-                    <input type="text" autocomplete="off" id="search-input" onchange="console.log('hello')">
-                    <img src="./assets/spinner.svg" class="search-nav-icon" alt="loading">
-                </div>
-            </form>
-
-        </div>
+        
 
         <div class="side-menu menu-closed" id="side-menu">
             <ul class="container side-menu-container" id="side-menu-main">
@@ -425,11 +425,48 @@
         </section>
     </main>
 
+    <article>
+        <section class="articles">
+            <div class="articles-wrapper" id="articles-wrapper">
+                <div class="article-card">
+                    <div class="article-header flex">
+                        <p class="article-type cl-green">News</p>
+                        <p class="article-no cl-gray">1/3</p>
+                    </div>
+                    <p class="article-date cl-gray">November 21, 2022</p>
+                    <p class="article-text">Baker Hughes Foundation Contributes $425,000 to Children's Recreational Therapy Camp in Italy</p>
+                </div>
+                <div class="article-card">
+                    <div class="article-header flex">
+                        <p class="article-type cl-green">News</p>
+                        <p class="article-no cl-gray">2/3</p>
+                    </div>
+                    <p class="article-date cl-gray">November 17, 2022</p>
+                    <p class="article-text">
+                        Technip Energies and Baker Hughes to Collaborate on a 1 to 2 MTPA Range Modularized LNG Solution
+                    </p>
+                </div>
+                <div class="article-card">
+                    <div class="article-header flex">
+                        <p class="article-type cl-green">Energy Forward</p>
+                        <p class="article-no cl-gray">3/3</p>
+                    </div>
+                    <p class="article-date cl-gray">November 21, 2022</p>
+                    <p class="article-text">Baker Hughes Foundation Contributes $425,000 to Children's Recreational Therapy Camp in Italy</p>
+                </div>
+
+            </div>
+        </section>
+    </article>
+
+    <div style="width: 100%; height: 100vh; background-color: white;"></div>
+
 </body>
 
 
 
 
 <script src="js/nav.js"></script>
+<script src="js/news.js"></script>
 
 </html>

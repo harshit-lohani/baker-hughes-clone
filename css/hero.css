@@ -2,11 +2,23 @@
     /* position: absolute; */
     height: 810px;
     width: 100%;
+    overflow: hidden;
+    background: red;
 }
+
+.hero .video-container video {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    object-fit:cover;
+    background-color: black;
+}
+
 
 .video-overlay {
     position: absolute;
-    top: 0;
+    top: 65px;
     height: 810px;
     width: 100%;
     z-index: 3;
@@ -19,26 +31,21 @@
 
 }
 
-video {
-    display: block;
-    margin: 0;
-    padding: 0;
-    object-fit: cover;
-    background-color: black;
-}
 
 main {
-    transform: translateY(60px);
-    height: 200vh;
+    margin-top: 65px;
+    /* height: 200vh; */
 }
 
 .video-text {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2em;
 }
 
 .video-title {
+    padding-bottom: 0.25em;
     color: white;
     font-size: 3.75rem;
     text-align: center;
@@ -59,7 +66,7 @@ main {
     /* margin: auto; */
 }
 
-@media (max-width:1024px) {
+@media (max-width:760px) {
     .video-title {
         font-size: 2.625rem;
     }

@@ -12,7 +12,7 @@ header {
 .nav {
     justify-content: space-between;
     align-items: center;
-    height: 65px;
+    min-height: 65px;
 }
 
 nav {
@@ -39,7 +39,7 @@ nav a {
     color: gray;
     height: 100%;
     cursor: pointer;
-    padding-bottom: 1.6rem;
+    padding-bottom: 1.3rem;
 }
 
 nav a:hover,
@@ -111,7 +111,7 @@ nav a.active {
     padding-bottom: 2em;
     padding-top: 1em;
     /* max-height: 100%; */
-    transition: 3s ease;
+    /* transition: .1s ease; */
     /* border-top: 1px solid rgba(0, 0, 0, 0.2); */
 }
 
@@ -180,17 +180,35 @@ nav a.active {
     margin-right: 1em;
 }
 
-.info .item-title {
+.menu-item .info {
+    flex: 1 0 auto;
+    width: 77px;
+    padding: 0 1em;
+}
+
+.menu-item .info .item-title {
     display: block;
     font-size: 0.875rem;
     font-weight: 600;
+    padding-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
 }
 
-.info .item-desc {
-    display: block;
+.menu-item .info .item-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     font-size: 0.75rem;
     font-weight: 400;
     color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    /* height: 3em; */
+    /* width: 100%; */
 }
 
 .view-all-btn {
@@ -292,9 +310,9 @@ nav a.active {
 }
 
 @media (max-width: 1024px) {
-    body {
+    /* body {
         background-color: blue;
-    }
+    } */
 
     nav {
         display: none;
@@ -345,8 +363,6 @@ nav a.active {
     z-index: 0;
     overflow: hidden;
 }
-
-#nav2col3 {}
 
 .nav-widget-li {
     border-left: 2px solid #02a783;
@@ -414,8 +430,10 @@ nav a.active {
     position: absolute;
     right: 0;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     background-color: white;
+    overflow-y: scroll;
 }
 
 .side-menu .menu-closed {
