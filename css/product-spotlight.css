@@ -9,12 +9,18 @@
     flex-flow: row;
     flex-wrap: nowrap;
     overflow-x: scroll;
+    transition: 0.25s ease;
+    scroll-snap-type: mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-align: left;
 }
 
 .product-spotlight .product-card {
     padding-right: 0;
     margin-right: 2em;
     min-width: 50%;
+    transition: 0.25s ease;
+
 }
 
 .product-spotlight .product-card:last-child {
@@ -70,8 +76,42 @@
 
 .product-card .product-card-cta:hover {
     background-color: #02a783;
-    /* border: none; */
     border: 1px solid #02a783;
+}
+
+.product-spotlight-left {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    background-color: white;
+    -webkit-mask: url("../assets/left-arrow.svg") no-repeat center;
+    mask: url("../assets/left-arrow.svg") no-repeat center;
+    width: 1.5rem;
+    margin: 0 1em;
+    opacity: 0;
+    transition: .25s ease-in;
+}
+
+.product-spotlight-left:hover {
+    opacity: 1;
+    transition: .1s;
+}
+
+.product-spotlight-right {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    right: 0;
+    background-color: white;
+    -webkit-mask: url("../assets/right.svg") no-repeat center;
+    mask: url("../assets/right.svg") no-repeat center;
+    width: 1.5rem;
+    margin: 0 1em;
+    opacity: 0;
+}
+
+.product-spotlight-right:hover {
+    opacity: 1;
 }
 
 @media (max-width: 1024px) {
@@ -93,5 +133,9 @@
     .product-spotlight .product-card {
         width: 75%;
         min-width: 75%;
+    }
+
+    .product-spotlight-arrows {
+        display: none;
     }
 }
