@@ -44,7 +44,7 @@ h1, h2, h3, p {
     width: 1.5em;
     height: 2px;
     background: #02a783;
-    border-radius: 50%;
+    border-radius: 1px;
     position: relative;
     left: 0;
     top: -0.5em;

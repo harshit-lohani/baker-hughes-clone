@@ -93,7 +93,6 @@
     top: 50%;
     /* height: 100px; */
     width: 100%;
-    background-color: black;
 }
 
 
@@ -161,7 +160,7 @@
 
 
     .tab-content-main .tab-content-card {
-        padding: 2em 0;
+        padding: 1em 0;
     }
 
     .tab-content-main .tab-content-card-info {
@@ -196,6 +195,16 @@
         max-height: 100%;
     }
 
+    .tab-content-main .tab-content-card-title {
+        font-size: 1rem;
+    }
+
+    .tab-content-main .tab-content-card-cta {
+        margin-top: 1em;
+    }
+
+
+    
 
 
 }
