@@ -17,6 +17,10 @@
     min-width: 50%;
 }
 
+.product-spotlight .product-card:last-child {
+    margin-right: 0;
+}
+
 .product-spotlight .product-card-img {
     max-width: 100%;
 }
@@ -81,6 +85,7 @@
 
     .product-card .product-card-cta {
         font-size: .875rem;
+        padding: .75em 2em;
     }
 }
 
